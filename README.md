@@ -124,4 +124,13 @@ We will use IPI method to deploy OCP on top of OSP. Prerequiste for installing O
    time="2021-09-21T15:54:16-04:00" level=info msg="Time elapsed: 0s"
    ```
 4. Once the cluster is deployed successfully. Login to OSP dashboard and notice that each pod has its own network
+   ![OSP Network](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/OSP-Network.png)
+5. Load balancers for each namespace
+   ![OSP LB](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/OSP-LB.png)
+6. Now let us deploy a sample app
+   ```bash
+   $oc new-project test-project
+   $oc new-app --git https://github.com/openshift/nodejs-ex.git   
+   ```
+7. After successfull deployment we will see a network and LB created in Openstack
       
