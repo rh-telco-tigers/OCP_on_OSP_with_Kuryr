@@ -47,7 +47,7 @@ We will use IPI method to deploy OCP on top of OSP. Prerequiste for installing O
    | id         | 6322872d9c7e445dbbb49c1f9ca28adc |
    | name       | new-user                         |
    | project_id | 636beab46fdf4e7da8b150b9c3d9c01f |
-   | username   | new-user                         |
+   | username   | ocpadmin                         |
    +------------+----------------------------------+
    [stack@aio ~]$ openstack role add --user ocpadmin --project ocp48 swiftoperator
    ```
