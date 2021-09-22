@@ -95,8 +95,8 @@ We will use IPI method to deploy OCP on top of OSP. Prerequiste for installing O
      - 172.30.0.0/16
    platform:
      openstack:
-       lbFloatingIP: 192.168.50.237
-       ingressFloatingIP: 192.168.50.212
+       lbFloatingIP: 192.168.50.237.          <== API FIP
+       ingressFloatingIP: 192.168.50.212      <== APP FIP
        cloud: standalone
        defaultMachinePlatform:
          type: ocp.small
