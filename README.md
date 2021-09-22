@@ -133,4 +133,9 @@ We will use IPI method to deploy OCP on top of OSP. Prerequiste for installing O
    $oc new-app --git https://github.com/openshift/nodejs-ex.git   
    ```
 7. After successfull deployment we will see a network and LB created in Openstack
-      
+   ![Test Project Network](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-net.png)
+   ![Test Project LB](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-lb.png)
+   ![Test Project Subports](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-net-subports.png)
+   
+# Conclusion
+Using Kuryr with OpenShift on OpenStack 16 provides the benefits of using OpenStack's Neutron networking directly for OpenShift pods and services, instead of the OpenShift SDN. Avoiding double encapsulation improves performance and reduces troubleshooting complexity, and you also get the benefits of directly associating floating IPs to OpenShift services, which is useful in several applications.   
