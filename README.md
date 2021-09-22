@@ -133,6 +133,7 @@ We will use IPI method to deploy OCP on top of OSP. Prerequiste for installing O
    $oc new-app --git https://github.com/openshift/nodejs-ex.git   
    ```
 7. After successfull deployment we will see a network and LB created in Openstack
+
    ![Test Project Network](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-net.png)
    ![Test Project LB](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-lb.png)
    ![Test Project Subports](https://github.com/rh-telco-tigers/OCP_on_OSP_with_Kuryr/blob/main/images/test-project-net-subports.png)
